@@ -1,0 +1,32 @@
+{
+  "name": "tp5er/think-redis",
+  "description": "An easy way to use the official PHP predis client in your thinkphp applications.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "zzqqw",
+      "email": "zhiqiangwang@aliyun.com"
+    }
+  ],
+  "require": {
+    "predis/predis": "^1.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "tp5er\\think\\redis\\": "src"
+    }
+  },
+  "require-dev": {
+    "topthink/framework": "^6.0"
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "tp5er\\think\\redis\\Service"
+      ],
+      "config": {
+        "redis": "config/redis.php"
+      }
+    }
+  }
+}
